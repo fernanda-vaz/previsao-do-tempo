@@ -2,8 +2,8 @@ const key = "dcf62b3dc5dab9a2a5ef117139d1a8e8";
 const searchBtn = document.querySelector(".search-btn");
 const searchIcon = document.querySelector("i");
 const input = document.querySelector(".input-city");
+const unsplashKey = "rbI3_V8Ge_L0FMWPXdwjQEen6-wS_Hjx6M00wj0aTrM";
 
-// searchBtn.addEventListener("click", getCity);
 searchIcon.addEventListener("click", getCity);
 
 function showData(data) {
@@ -44,8 +44,6 @@ async function startPage(bsb) {
   showData(data);
 }
 
-const unsplashKey = "rbI3_V8Ge_L0FMWPXdwjQEen6-wS_Hjx6M00wj0aTrM";
-
 async function getRandomLandscapeImage() {
     const url = `https://api.unsplash.com/photos/random?query=landscape&client_id=${unsplashKey}`;
 
@@ -53,7 +51,7 @@ async function getRandomLandscapeImage() {
         const response = await fetch(url);
         const data = await response.json();
         if (response.ok) {
-            console.log(data);
+            // console.log(data);
             setBackgroundImage(data.urls.regular);
         } else {
             console.error('Erro ao buscar imagem:', data);
@@ -63,14 +61,12 @@ async function getRandomLandscapeImage() {
     }
 }
 
-// Função para definir a imagem como background do body
 function setBackgroundImage(imageUrl) {
     document.body.style.backgroundImage = `url(${imageUrl})`;
     document.body.style.backgroundSize = 'cover';
     document.body.style.backgroundPosition = 'center';
 }
 
-// Chamando a função para carregar uma imagem aleatória ao carregar a página
 window.onload = getRandomLandscapeImage;
 
 startPage();

@@ -53,9 +53,7 @@ body {
     height: 48px;
     border-radius: 12px;
     border: none;
-    /* box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 12px; */
     background-color: transparent;
-    /* background-color: #7c7c7c2b; */
     padding: 20px;
     outline: none;
     color: #d9d9d9;
@@ -64,17 +62,6 @@ body {
 .input-city::placeholder {
     font-size: 16px;
     color:#b0adadeb;
-}
-
-.search-btn {
-    border: none;
-    outline: none;
-    padding: 10px;
-    border-radius: 50%;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    background-color: transparent;
-    float: right;
-    cursor: pointer;
 }
 
 .weather-container {
