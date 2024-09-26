@@ -81,16 +81,47 @@ body {
     .container {
         max-width: 600px;
         width: 70%;
-        height: 35%;
+        height: 380px;
         padding: 20px;
     }
+
+    .search {
+        padding: 2px 4px;
+        gap: 0;
+    }
+    
+    .search i {
+        margin-right: 18px;
+    }
+
+    .input-city {
+        padding: 2px 8px;
+    }
+
 }
 
 @media (max-width: 480px) {
     .container {
         max-width: 600px;
         width: 70%;
-        height: 40%;
+        height: 350px;
         padding: 20px;
+    }
+
+    .search {
+        padding: 2px 4px;
+        gap: 0;
+    }
+    
+    .search i {
+        margin-right: 4px;
+    }
+
+    .input-city {
+        padding: 2px 8px;
+    }
+
+    .input-city::placeholder {
+        font-size: 14px;
     }
 }
