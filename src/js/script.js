@@ -1,8 +1,10 @@
 const key = "dcf62b3dc5dab9a2a5ef117139d1a8e8";
 const searchBtn = document.querySelector(".search-btn");
+const searchIcon = document.querySelector("i");
 const input = document.querySelector(".input-city");
 
-searchBtn.addEventListener("click", getCity);
+// searchBtn.addEventListener("click", getCity);
+searchIcon.addEventListener("click", getCity);
 
 function showData(data) {
   let iconCode = data.weather[0].icon;
@@ -41,6 +43,8 @@ async function startPage(bsb) {
 
   showData(data);
 }
+
+const unsplashKey = "rbI3_V8Ge_L0FMWPXdwjQEen6-wS_Hjx6M00wj0aTrM";
 
 async function getRandomLandscapeImage() {
     const url = `https://api.unsplash.com/photos/random?query=landscape&client_id=${unsplashKey}`;
