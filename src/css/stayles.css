@@ -38,7 +38,7 @@ body {
     padding: 8px 12px;
     border: none;
     background-color: transparent;
-    gap: 8px;
+    gap: 10px;
     cursor: pointer;
     height: 56px;
 }
@@ -94,11 +94,7 @@ body {
 
     .search {
         padding: 2px 4px;
-        gap: 0;
-    }
-    
-    .search i {
-        margin-right: 18px;
+        gap: 10px;
     }
 
     .input-city {
@@ -117,11 +113,7 @@ body {
 
     .search {
         padding: 2px 4px;
-        gap: 0;
-    }
-    
-    .search i {
-        margin-right: 4px;
+        gap: 10px;
     }
 
     .input-city {
