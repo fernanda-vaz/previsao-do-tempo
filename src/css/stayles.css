@@ -36,24 +36,31 @@ body {
     align-items: center;
     margin-bottom: 20px;
     padding: 8px 12px;
-    gap: 6px;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 12px;
-    border-radius: 18px;
-    background-color: #7c7c7c2b;
+    border: none;
+    background-color: transparent;
+    gap: 8px;
     cursor: pointer;
     height: 56px;
 }
 
-.search i {
+.search-btn {
     color: #cdcdcd;
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 4px 12px;
+    border-radius: 50%;
+    border: none;
+    padding: 16px;
+    background-color: #7c7c7c2b;
+    outline: none;
+    cursor: pointer;
 }
 
 .input-city {
-    width: 300px;
+    width: 90%;
     height: 48px;
     border-radius: 12px;
     border: none;
-    background-color: transparent;
+    background-color: #7c7c7c2b;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 12px;
     padding: 20px;
     outline: none;
     color: #d9d9d9;

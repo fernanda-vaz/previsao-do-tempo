@@ -1,10 +1,9 @@
 const key = "dcf62b3dc5dab9a2a5ef117139d1a8e8";
 const searchBtn = document.querySelector(".search-btn");
-const searchIcon = document.querySelector("i");
 const input = document.querySelector(".input-city");
 const unsplashKey = "rbI3_V8Ge_L0FMWPXdwjQEen6-wS_Hjx6M00wj0aTrM";
 
-searchIcon.addEventListener("click", getCity);
+searchBtn.addEventListener("click", getCity);
 
 function showData(data) {
   let iconCode = data.weather[0].icon;
